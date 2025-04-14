@@ -6,20 +6,28 @@ public class Main {
         int age = 18;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        } else {
+            System.out.println("Тебе нет 18, немного подожди");
         }
         int age1 = 17;
-        if (age1 < 18)
+        if (age1 < 18) {
             System.out.println("Если возраст человека равен " + age1 + ", то он еще не достиг соввершеннолетия,нужно немного подождать");
-
+        } else {
+            System.out.println("Ты совершеннолетний");
+        }
         System.out.println("Задание 2");
 
         int t = 4;
         if (t < 5) {
             System.out.println("На улице " + t + " градусов,нужно надеть шапку");
+        } else {
+            System.out.println("На улице тепло");
         }
         int t1 = 6;
         if (t1 > 5) {
             System.out.println("На улице " + t1 + " градусов,можно идти без шапки");
+        } else {
+            System.out.println("На улице холодно");
         }
 
         System.out.println("Задание 3");
@@ -27,10 +35,14 @@ public class Main {
         int speed1 = 70;
         if (speed1 > 60) {
             System.out.println("Если скорость " + speed1 + ", то придеться заплатить штраф");
+        } else {
+            System.out.println("Ты едешь спокойно");
         }
         int speed2 = 50;
         if (speed2 < 60){
             System.out.println("Если скорость " + speed2 + ", то можно ездить спокойно");
+        }else {
+            System.out.println("Ты заплатишь штраф");
         }
 
         System.out.println("Задание 4");
@@ -70,13 +82,13 @@ public class Main {
 
         System.out.println("Задание 6");
 
-        int place = 0;
-        if (place > 60) {
+        int place = 3;
+        if (place > 60 && place <= 102) {
             System.out.println("Если место номер " + place + ", то место стоячее");
         }
-        if (place < 60 && place != 0){
+        if (place < 60){
             System.out.println("Если место номер " + place + ", то место сидячее");
-        } else {
+        } else if (place > 102) {
             System.out.println("Если мест " + place + ", то вагон забит");
         }
 
